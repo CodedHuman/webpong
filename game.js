@@ -205,9 +205,10 @@ callback(e);
 function stopAll() {
 document.getElementById('startgamebtn').disabled = false;
 document.getElementById('startgamebtn').style.visibility = 'visible';
+document.getElementById('startgamebtn').innerHTML = "RESTART GAME";
 this.p1.score = 0;
 this.p2.score = 0;
-
+setTimeout(MainLoop, 0);
 }
 
 

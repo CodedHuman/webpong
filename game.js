@@ -49,6 +49,7 @@ window.alert("GAME OVER");
 this.p1.score = 0;
 this.p2.score = 0;
 stopAll();
+
 }
 
 // To which Y direction the paddle is moving
@@ -202,13 +203,12 @@ callback(e);
 };
 
 function stopAll() {
-if (this.p1.score + 5 == this.p2.score || this.p2.score + 5 == this.p1.score) {
 setTimeout(MainLoop, 0);
 document.getElementById('startgamebtn').disabled = false;
 document.getElementById('startgamebtn').style.visibility = 'visible';
 this.p1.score = 0;
 this.p2.score = 0;
-}
+
 }
 
 

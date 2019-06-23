@@ -209,6 +209,3 @@ game.draw();
 // Call the main loop again at a frame rate of 30fps
 setTimeout(MainLoop, 33.3333);
 }
-
-// Start the game execution
-MainLoop();

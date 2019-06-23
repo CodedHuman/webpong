@@ -202,6 +202,7 @@ callback(e);
 };
 
 function stopAll() {
+alert("GAME OVER!");
 document.getElementById('startgamebtn').disabled = false;
 document.getElementById('startgamebtn').style.visibility = 'visible';
 document.getElementById('startgamebtn').innerHTML = "RESTART GAME";

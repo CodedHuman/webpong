@@ -52,15 +52,15 @@ this.p2.score = 0;
 
 // To which Y direction the paddle is moving
 if (this.keys.isPressed(83)) { // DOWN
-this.p1.y = Math.min(this.height - this.p1.height, this.p1.y + 8);
+this.p1.y = Math.min(this.height - this.p1.height, this.p1.y + 12);
 } else if (this.keys.isPressed(87)) { // UP
-this.p1.y = Math.max(0, this.p1.y - 8);
+this.p1.y = Math.max(0, this.p1.y - 12);
 }
 
 if (this.keys.isPressed(40)) { // DOWN
-this.p2.y = Math.min(this.height - this.p2.height, this.p2.y + 8);
+this.p2.y = Math.min(this.height - this.p2.height, this.p2.y + 12);
 } else if (this.keys.isPressed(38)) { // UP
-this.p2.y = Math.max(0, this.p2.y - 8);
+this.p2.y = Math.max(0, this.p2.y - 12);
 }
 
 if (this.ball.vx > 0) {

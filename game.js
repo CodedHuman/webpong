@@ -124,7 +124,7 @@ this.ball.vx *= -1;
 function Paddle(x,y) {
 this.x = x;
 this.y = y;
-this.width = 2;
+this.width = 4;
 this.height = 56;
 this.score = 0;
 }

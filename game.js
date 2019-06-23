@@ -45,7 +45,6 @@ this.display2.value = this.p2.score;
 
 //GAME RESET on lose function  
 if (this.p1.score + 5 == this.p2.score || this.p2.score + 5 == this.p1.score) {
-window.alert("GAME OVER");
 this.p1.score = 0;
 this.p2.score = 0;
 stopAll();

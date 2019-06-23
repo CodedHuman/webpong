@@ -48,6 +48,7 @@ if (this.p1.score + 5 == this.p2.score || this.p2.score + 5 == this.p1.score) {
 window.alert("GAME OVER");
 this.p1.score = 0;
 this.p2.score = 0;
+  stopFunction();
 }
 
 // To which Y direction the paddle is moving

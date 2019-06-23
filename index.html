@@ -42,6 +42,7 @@ built into your browser!</p>
 <div class="spotlight">
 <div class="content">
 <body>
+  <div id="wrapper">
 <canvas id="game" width="1024" style="z-index:1" height="512">
 
 
@@ -52,9 +53,8 @@ background-color: green;
 
 </style>
 </canvas>
-  <!--<div id="wrapper">
   <input value="START GAME" type="button" style="z-index:2; position:absolute; top:256; left: 512" onclick="MainLoop()"/>
-  </div>-->
+  </div>
 </body>
 </div>
 </div>
@@ -93,16 +93,5 @@ background-color: green;
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="game.js"></script>
- <script>
-var $testButton = $('<input/>').attr({
-    type: 'button',
-    name: 'startgamebtn',
-    value: 'START GAME',
-    id: 'startBtn',
-    style: 'position:absolute; top:256px;left:512px; z-index:2'
-});
-$('body').append($testButton);
-$(document).on("click", "#testButton", MainFunction());
-  </script>
 </body>
 </html>

@@ -23,7 +23,7 @@ this.ball.vx = 7 - Math.abs(this.ball.vy);
 
 Game.prototype.draw = function()
 {
-this.context.clearRect(1, 1, this.width, this.height); //todo change
+this.context.clearRect(0, 0, this.width, this.height); //todo change
 this.context.fillRect(this.width/2, 0, 2, this.height);
 
 this.ball.draw(this.context);

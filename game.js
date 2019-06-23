@@ -43,6 +43,7 @@ this.ball.update();
 this.display1.value = this.p1.score;
 this.display2.value = this.p2.score;
 
+//GAME RESET on lose function  
 if (this.p1.score + 5 == this.p2.score || this.p2.score + 5 == this.p1.score) {
 window.alert("GAME OVER");
 this.p1.score = 0;
@@ -112,8 +113,8 @@ this.ball.x = this.width/2;
 this.ball.y = p.y + p.height/2;
 
 // set ball velocity
-this.ball.vy = Math.floor(Math.random()*8 - 6);
-this.ball.vx = 7 - Math.abs(this.ball.vy);
+this.ball.vy = Math.floor(Math.random()*12 - 6);
+this.ball.vx = 14 - Math.abs(this.ball.vy);
 if (player == 1)
 this.ball.vx *= -1;
 };

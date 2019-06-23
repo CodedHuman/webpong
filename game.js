@@ -203,7 +203,6 @@ callback(e);
 };
 
 function stopAll() {
-setTimeout(MainLoop, 0);
 document.getElementById('startgamebtn').disabled = false;
 document.getElementById('startgamebtn').style.visibility = 'visible';
 this.p1.score = 0;

@@ -200,6 +200,16 @@ callback(e);
 });
 };
 
+function stopGame() {
+if (this.p1.score + 5 == this.p2.score || this.p2.score + 5 == this.p1.score) {
+setTimeout(Mainloop, 0);
+document.getElementById('startgamebtn').disabled = false;
+document.getElementById('startgamebtn').style.visibility = 'visible';
+this.p1.score = 0;
+this.p2.score = 0;
+}
+}
+
 
 // Initialize our game instance
 var game = new Game();
